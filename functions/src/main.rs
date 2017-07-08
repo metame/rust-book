@@ -1,6 +1,6 @@
 
 fn main() {
-    println!("3.2 Functions");
+    println!("3.3 Functions");
 
     // every rust program has one function and you're in it
 
