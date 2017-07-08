@@ -1,3 +1,4 @@
+#![allow(unused_variables)]
 fn main(){
     println!("3.2 Data Types");
 
@@ -54,4 +55,26 @@ fn main(){
     let d: char = 'b';
 
 
+    /* Compound types */
+    // collections of other types
+    // primitive compound types: tuples & arrays
+
+    /*Tuple*/
+    let tup: (i32, char, f64) = (500, 'y', 6.4);
+
+    // retrieving values from a tuple using destructuring and 0-based index
+    let (num, yes, float) = tup;
+    assert!(num == tup.0);
+    assert!(yes == tup.1);
+    assert!(float == tup.2);
+
+    /*Array*/
+    // elements of same-type
+    // fixed length
+    let a = [1,2,3,4,5];
+    // accessed by index using square brackets instead of dots
+    assert!(a[0] == 1);
+    // most of the time you will use a vector for the arrays you'd use in other languages
+
+    // out of bounds index access will compile but panic! at run time
 }
